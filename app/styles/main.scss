@@ -1,0 +1,49 @@
+// Settings imports
+
+@import "__vars";
+@import "_mixins";
+@import "default";
+@import "fonts";
+
+// Partials imports
+
+@import "partials/jquery-ui";
+@import "partials/lightgallery";
+@import "partials/magnific-popup";
+@import "partials/owl-carousel";
+@import "partials/slick";
+
+// Shared imports
+
+@import "shared/button";
+@import "shared/checkbox";
+@import "shared/dots-separator";
+@import "shared/hint";
+@import "shared/input";
+@import "shared/link";
+@import "shared/popup";
+@import "shared/radio";
+@import "shared/textarea";
+@import "shared/title";
+@import "shared/tooltip";
+
+// Components imports
+
+@import "components/breadcrumbs";
+@import "components/cart";
+@import "components/catalogue";
+@import "components/categories-view";
+@import "components/contact-us";
+@import "components/contacts";
+@import "components/footer";
+@import "components/header";
+@import "components/news";
+@import "components/pagination";
+@import "components/price";
+@import "components/product";
+@import "components/promo";
+@import "components/recommended";
+@import "components/select-city";
+@import "components/showcase";
+@import "components/thank-you";
+

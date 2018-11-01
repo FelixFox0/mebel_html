@@ -1,0 +1,31 @@
+{
+  "name": "inline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maksym Sorokatov",
+  "license": "ISC",
+  "dependencies": {
+    "inputmask": "^4.0.0",
+    "jquery": "^3.3.1",
+    "jquery-parallax.js": "^1.5.0",
+    "lightgallery": "^1.6.11",
+    "magnific-popup": "^1.1.0",
+    "owl.carousel": "^2.3.4",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "run-sequence": "^2.2.1"
+  }
+}

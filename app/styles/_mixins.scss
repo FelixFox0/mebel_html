@@ -1,0 +1,86 @@
+@mixin roboto-bold() {
+    font-family: RobotoSlab;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin roboto-regular() {
+    font-family: RobotoSlab;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin caveat-regular() {
+    font-family: Caveat;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin calibri-bold() {
+    font-family: Calibri;
+    font-weight: bold;
+    font-style: normal;
+}
+
+@mixin calibri-regular() {
+    font-family: Calibri;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin calibri-light() {
+    font-family: Calibri;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+// Layout
+
+@mixin inline-row($justify: '', $align: '') {
+    display: inline-flex;
+    @if $justify != '' {
+        justify-content: $justify;
+    }
+    @if $align != '' {
+        align-items: $align;
+    }
+}
+
+@mixin row($justify: '', $align: '') {
+    display: flex;
+    @if $justify != '' {
+        justify-content: $justify;
+    }
+    @if $align != '' {
+        align-items: $align;
+    }
+}
+
+@mixin column($align: '', $justify: '') {
+    display: flex;
+    flex-direction: column;
+    @if $justify != '' {
+        justify-content: $justify;
+    }
+    @if $align != '' {
+        align-items: $align;
+    }
+}
+
+// Images
+
+@mixin bg-image($path) {
+    background-image: url("../images/#{$path}");
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width + 1 + $container-padding * 2}) {
+        @content;
+    }
+}
+
+@mixin sm-desktop {
+    @media (max-width: #{$desktop-width + $container-padding * 2}) {
+        @content;
+    }
+}

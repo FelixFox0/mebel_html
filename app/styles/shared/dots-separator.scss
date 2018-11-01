@@ -1,0 +1,12 @@
+.dots-separator {
+    display: inline-block;
+    flex-grow: 1;
+    width: 100%;
+    height: 2px;
+    @include bg-image('dots-separator.png');
+    background-repeat: repeat-x;
+
+    &._brown {
+        @include bg-image('dots-separator-brown.png')
+    }
+}

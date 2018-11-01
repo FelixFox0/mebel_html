@@ -1,0 +1,110 @@
+.header {
+
+    &__container {
+        position: relative;
+        padding: 13px 0 30px;
+        @include row(space-between);
+    }
+
+    &__nav {
+
+        .link + .link {
+            margin-left: 75px;
+
+            @include sm-desktop {
+                margin-left: 35px;
+            }
+        }
+
+        &-contacts {
+            @include row(flex-start, center);
+            margin-bottom: 40px;
+
+            .link + .link {
+                margin-left: 74px;
+
+                @include sm-desktop {
+                    margin-left: 52px;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        top: 13px;
+        left: 50%;
+        display: inline-block;
+        width: 168px;
+        height: 88px;
+        @include bg-image("logo.svg");
+        transform: translateX(-50%);
+    }
+
+    &__contacts {
+        @include column();
+        max-width: 565px;
+        width: 565px;
+
+        @include sm-desktop {
+            max-width: 457px;
+            width: 457px;
+        }
+
+        &-row {
+            @include inline-row();
+        }
+
+        &-column {
+            @include column();
+
+            & + & {
+                margin-left: 85px;
+
+                @include sm-desktop {
+                    margin-left: 50px;
+                }
+            }
+        }
+
+        &-schedule {
+            margin-top: 5px;
+            font-size: 13px;
+            color: $orange;
+        }
+    }
+
+    &__lang {
+        align-self: flex-end;
+        line-height: 1;
+
+        .link + .link {
+            margin-left: 25px;
+        }
+    }
+
+    &__city {
+        margin-bottom: 6px;
+    }
+
+    &__categories {
+        padding: 30px 0;
+        background-color: $color-text;
+
+        &-container {
+            @include row(space-between);
+        }
+
+        &-link {
+            color: $orange;
+            @include roboto-bold;
+            text-transform: uppercase;
+            font-size: 17px;
+            transition: $transition-time color;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,151 @@
+.button {
+    display: inline-block;
+    min-width: 185px;
+    padding: 13px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    @include calibri-bold;
+    color: $white;
+    background-color: $orange-bright;
+    transition: $transition-time all;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $red;
+    }
+
+    &._color-sky {
+        background-color: $skyblue;
+
+        &:hover {
+            background-color: $skyblue - 50;
+        }
+    }
+
+    &._inverted {
+        border: 1px solid $orange;
+        background-color: transparent;
+        color: $orange;
+        font-size: 18.5px;
+        line-height: 1;
+        @include calibri-regular;
+        text-transform: none;
+        transition: none;
+
+        &:hover {
+            color: $orange-bright;
+            border-color: $orange-bright;
+        }
+    }
+
+    &._disabled {
+        pointer-events: none;
+        opacity: .5;
+    }
+
+    &._loading {
+        pointer-events: none;
+    }
+
+    &__loader {
+        position: relative;
+        top: -1px;
+        display: none;
+
+        &-item {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            margin-right: 13px;
+            border-radius: 100%;
+            background-color: $white;
+            transform: scale(1);
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+            &:first-child {
+                animation-name: loader-item-1;
+            }
+
+            &:nth-child(2) {
+                animation-name: loader-item-2;
+            }
+
+            &:nth-child(3) {
+                animation-name: loader-item-3;
+            }
+
+            &:nth-child(4) {
+                animation-name: loader-item-4;
+            }
+        }
+    }
+
+
+    &._loading & {
+
+        &__text {
+            display: none;
+        }
+
+        &__loader {
+            @include inline-row();
+        }
+    }
+}
+
+@keyframes loader-item-1 {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    20%,
+    90% {
+        transform: scale(1);
+    }
+}
+
+@keyframes loader-item-2 {
+
+    0%,
+    30%,
+    100% {
+        transform: scale(0);
+    }
+
+    40%,
+    90% {
+        transform: scale(1);
+    }
+}
+
+@keyframes loader-item-3 {
+
+     0%,
+     50%,
+     100% {
+         transform: scale(0);
+     }
+
+     60%,
+     90% {
+         transform: scale(1);
+     }
+ }
+
+@keyframes loader-item-4 {
+
+    0%,
+    70%,
+    100% {
+        transform: scale(0);
+    }
+
+    80%,
+    90% {
+        transform: scale(1);
+    }
+}

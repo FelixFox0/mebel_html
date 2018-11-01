@@ -1,0 +1,1373 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Вкусная Мебель</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/libs.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="promo js-promo _hidden">
+        <a href="#" class="promo__close js-promo-close">
+            <svg class="promo__close-icon" width="17px" height="17px">
+                <path d="M16.017,13.966 L13.966,16.016 L8.498,10.548 L3.031,16.016 L0.980,13.966 L6.448,8.498 L0.980,3.030 L3.031,0.979 L8.498,6.448 L13.966,0.979 L16.017,3.030 L10.549,8.498 L16.017,13.966 Z"/>
+            </svg>
+        </a>
+        <div class="promo__container container">
+            На Новый Год дарим скидки на все товары 3%
+        </div>
+    </div>
+    <div class="header__container container">
+        <div class="header__nav">
+            <div class="header__nav-contacts">
+                <a href="#mfp-callback" class="link _color-orange _font-sm js-popup-toggle">
+                    <i class="link__icon _phone"></i>
+                    <span class="link__text">Обратный Звонок</span>
+                </a>
+                <a href="#" class="link _color-orange _font-sm">
+                    <i class="link__icon _msg"></i>
+                    <span class="link__text">Консультация Онлайн</span>
+                </a>
+            </div>
+            <div class="header__nav-links">
+                <a class="link" href="#">О нас</a>
+                <a class="link" href="#">Полезное</a>
+                <a class="link" href="#">Доставка и Оплата</a>
+                <a class="link" href="/contacts.html">Контакт</a>
+            </div>
+        </div>
+        <a href="/" class="header__logo"></a>
+        <div class="header__contacts">
+            <div class="header__lang">
+                <a href="#" class="link _color-orange _font-sm">
+                    <span class="link__text">Укр</span>
+                </a>
+                <a href="#" class="link _font-sm">
+                    <span class="link__text">Рус</span>
+                </a>
+            </div>
+            <div class="header__city select-city__wrap js-select-city-wrap">
+                <a href="#" class="link _color-orange js-select-city-open">
+                    <span class="link__text js-select-city-value">Одесса</span>
+                </a>
+                <div class="select-city js-select-city">
+                    <span class="select-city__close js-select-city-close">
+                        <svg class="select-city__close-icon" width="17px" height="17px">
+                            <path d="M16.017,13.966 L13.966,16.016 L8.499,10.548 L3.031,16.016 L0.980,13.966 L6.448,8.498 L0.980,3.030 L3.031,0.979 L8.499,6.447 L13.966,0.979 L16.017,3.030 L10.549,8.498 L16.017,13.966 Z"/>
+                        </svg>
+                    </span>
+                    <div class="select-city__title">Выберите город</div>
+                    <div class="select-city__desc">Мы доставляем заказы по всей Украине!</div>
+                    <div class="select-city__items">
+                        <div class="select-city__column">
+                            <a href="#" class="select-city__item js-select-city-item" data-value="Киев">Киев</a>
+                            <a href="#" class="select-city__item js-select-city-item _sm" data-value="Бровары">Бровары</a>
+                            <a href="#" class="select-city__item js-select-city-item _sm" data-value="Борисполь">Борисполь</a>
+                            <a href="#" class="select-city__item js-select-city-item _sm" data-value="Ирпень">Ирпень</a>
+                        </div>
+                        <div class="select-city__column">
+                            <a href="#" class="select-city__item js-select-city-item  _active" data-value="Одесса">Одесса</a>
+                            <a href="#" class="select-city__item js-select-city-item _sm" data-value="Черноморск">Черноморск</a>
+                            <a href="#" class="select-city__item js-select-city-item _sm" data-value="Николаев">Николаев</a>
+                            <a href="#" class="select-city__item js-select-city-item _sm" data-value="Южный">Южный</a>
+                            <a href="#" class="select-city__item js-select-city-item _sm" data-value="Фонтанка">Фонтанка</a>
+                        </div>
+                        <div class="select-city__column">
+                            <a href="#" class="select-city__item js-select-city-item" data-value="Харьков">Харьков</a>
+                            <a href="#" class="select-city__item js-select-city-item" data-value="Днепр">Днепр</a>
+                            <a href="#" class="select-city__item js-select-city-item" data-value="Запорожье">Запорожье</a>
+                            <a href="#" class="select-city__item js-select-city-item" data-value="Львов">Львов</a>
+                        </div>
+                    </div>
+                    <div class="select-city__manual-input">
+                        <div class="select-city__manual-input-text">Или введите другой населенный пункт</div>
+                        <div class="select-city__manual-input-wrap">
+                            <input type="text" class="input js-select-city-input" placeholder="Введите ваш город">
+                            <button class="select-city__manual-input-send _disabled js-select-city-button"></button>
+                        </div>
+                        <div class="select-city__manual-input-example">
+                            Например:
+                            <a href="#" class="link _font-sm _color-orange js-select-city-item" data-value="Беляевка">
+                                <span class="link__text">Беляевка</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__contacts-row">
+                <div class="header__contacts-column">
+                    <a class="link" href="tel:0507555545">(050) 755-55-45</a>
+                    <span class="header__contacts-schedule">c 10:00 до 20:00</span>
+                </div>
+                <div class="header__contacts-column">
+                    <span class="header__contacts-address">ул. Семена Палия, 125, магазин 290</span>
+                    <span class="header__contacts-schedule">Вт - Вс, с 9:00 до 14:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__categories">
+        <div class="header__categories-container container">
+            <a class="header__categories-link" href="/catalogue.html">Комплекты</a>
+            <a class="header__categories-link" href="/catalogue.html">Шкафы</a>
+            <a class="header__categories-link" href="/catalogue.html">Комоды </a>
+            <a class="header__categories-link" href="/catalogue.html">Столы</a>
+            <a class="header__categories-link" href="/catalogue.html">Кресла</a>
+            <a class="header__categories-link" href="/catalogue.html">Стулья</a>
+            <a class="header__categories-link" href="/catalogue.html">Диваны</a>
+            <a class="header__categories-link" href="/catalogue.html">Кровати</a>
+            <a class="header__categories-link" href="/catalogue.html">Матрассы</a>
+            <a class="header__categories-link" href="/catalogue.html">Декор</a>
+            <a class="header__categories-link" href="/catalogue.html">Cвет</a>
+        </div>
+    </div>
+</header>
+<div class="breadcrumbs">
+    <div class="container breadcrumbs__container">
+        <a href="/" class="breadcrumbs__link">
+            <span class="breadcrumbs__link-text">Главная</span>
+        </a>
+        <a href="/catalogue.html" class="breadcrumbs__link">
+            <span class="breadcrumbs__link-text">Шкафы</span>
+        </a>
+        <a href="#" class="breadcrumbs__link">
+            <span class="breadcrumbs__link-text">Светильники - Loft Ogonek</span>
+        </a>
+    </div>
+</div>
+
+<div class="product-page">
+    <div class="container">
+        <div class="product-page__title">Светильники - Loft Ogonek</div>
+        <div class="product-page__code">Код Товара: 95078</div>
+        <div class="product-page__card">
+            <div class="product-page__row">
+                <div class="product-page__column">
+                    <div class="product-page__image-zone">
+                        <div class="product-page__image-thumbs">
+                            <a href="#" class="product-page__image-thumb _active js-product-gallery-thumb" data-img-id="01">
+                                <img src="images/thumb-6.jpg" alt="thumb">
+                            </a>
+                            <a href="#" class="product-page__image-thumb js-product-gallery-thumb" data-img-id="02">
+                                <img src="images/product-big-3_2.jpg" alt="thumb">
+                            </a>
+                        </div>
+
+                        <div class="product-page__image-wrap js-product-gallery">
+                            <a href="images/product-big-3.jpg" class="product-page__image _active js-product-gallery-img" data-img-id="01">
+                                <img src="images/product-big-3.jpg" alt="product">
+                            </a>
+                            <a href="images/product-big-3_2.jpg" class="product-page__image js-product-gallery-img" data-img-id="02">
+                                <img src="images/product-big-3_2.jpg" alt="product">
+                            </a>
+                        </div>
+                    </div></div>
+                <div class="product-page__column">
+
+                    <div class="product-page__delivery-row">
+                        Доставка в:
+                        <div class="select-city__wrap js-select-city-wrap">
+                            <a href="#" class="link _color-orange js-select-city-open">
+                                <span class="link__text js-select-city-value">Одесса</span>
+                            </a>
+                            <div class="select-city js-select-city">
+                            <span class="select-city__close js-select-city-close">
+                                <svg class="select-city__close-icon" width="17px" height="17px">
+                                    <path d="M16.017,13.966 L13.966,16.016 L8.499,10.548 L3.031,16.016 L0.980,13.966 L6.448,8.498 L0.980,3.030 L3.031,0.979 L8.499,6.447 L13.966,0.979 L16.017,3.030 L10.549,8.498 L16.017,13.966 Z"/>
+                                </svg>
+                            </span>
+                                <div class="select-city__title">Выберите город</div>
+                                <div class="select-city__desc">Мы доставляем заказы по всей Украине!</div>
+                                <div class="select-city__items">
+                                    <div class="select-city__column">
+                                        <a href="#" class="select-city__item js-select-city-item" data-value="Киев">Киев</a>
+                                        <a href="#" class="select-city__item js-select-city-item _sm" data-value="Бровары">Бровары</a>
+                                        <a href="#" class="select-city__item js-select-city-item _sm" data-value="Борисполь">Борисполь</a>
+                                        <a href="#" class="select-city__item js-select-city-item _sm" data-value="Ирпень">Ирпень</a>
+                                    </div>
+                                    <div class="select-city__column">
+                                        <a href="#" class="select-city__item js-select-city-item  _active" data-value="Одесса">Одесса</a>
+                                        <a href="#" class="select-city__item js-select-city-item _sm" data-value="Черноморск">Черноморск</a>
+                                        <a href="#" class="select-city__item js-select-city-item _sm" data-value="Николаев">Николаев</a>
+                                        <a href="#" class="select-city__item js-select-city-item _sm" data-value="Южный">Южный</a>
+                                        <a href="#" class="select-city__item js-select-city-item _sm" data-value="Фонтанка">Фонтанка</a>
+                                    </div>
+                                    <div class="select-city__column">
+                                        <a href="#" class="select-city__item js-select-city-item" data-value="Харьков">Харьков</a>
+                                        <a href="#" class="select-city__item js-select-city-item" data-value="Днепр">Днепр</a>
+                                        <a href="#" class="select-city__item js-select-city-item" data-value="Запорожье">Запорожье</a>
+                                        <a href="#" class="select-city__item js-select-city-item" data-value="Львов">Львов</a>
+                                    </div>
+                                </div>
+                                <div class="select-city__manual-input">
+                                    <div class="select-city__manual-input-text">Или введите другой населенный пункт</div>
+                                    <div class="select-city__manual-input-wrap">
+                                        <input type="text" class="input js-select-city-input" placeholder="Введите ваш город">
+                                        <button class="select-city__manual-input-send _disabled js-select-city-button"></button>
+                                    </div>
+                                    <div class="select-city__manual-input-example">
+                                        Например:
+                                        <a href="#" class="link _font-sm _color-orange js-select-city-item" data-value="Беляевка">
+                                            <span class="link__text">Беляевка</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        15-20 рабочих дней
+                    </div>
+                    <div class="product-page__order-row">
+                        <div class="price__wrap">
+                            <div class="price">
+                                <span class="price__value">5899</span>
+                                <span class="price__period">грн</span>
+                            </div>
+                        </div>
+                        <button class="button">Заказать</button>
+                        <a href="#mfp-how-to-order" class="link _color-orange _font-sm js-popup-toggle">
+                            <span class="link__text">Как происходит заказ?</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-page__row">
+                <div class="product-page__column">
+                    <div class="product-page__data">
+                        <div class="product-page__title">
+                            Описание товара
+                        </div>
+                        <div class="product-page__data-desc">
+                            Шкаф-купе двухдверный с фасадами из ДСП (цвет ДСП на выбор).
+                            По Вашему желанию цвета ДСП могут комбинироваться.
+                            Шкафы-купе давно стали неотъемлемой частью современного интерьера,
+                            открывая и расширяя пространство нашего дома, они отличаются
+                            отличной функциональностью, эргономичными данными и возможностью
+                            выбрать наружное оформление
+                        </div>
+                        <div class="product-page__data-column-wrapper">
+                            <div class="product-page__data-column _size">
+                                <div class="product-page__data-column-title">Размер, мм</div>
+                                <div class="product-page__data-column-row">
+                                    <span class="product-page__data-column-char">Длина</span>
+                                    <span class="dots-separator"></span>
+                                    <span class="product-page__data-column-value">1300</span>
+                                </div>
+                                <div class="product-page__data-column-row">
+                                    <span class="product-page__data-column-char">Высота</span>
+                                    <span class="dots-separator"></span>
+                                    <span class="product-page__data-column-value">2600</span>
+                                </div>
+                                <div class="product-page__data-column-row">
+                                    <span class="product-page__data-column-char">Ширина</span>
+                                    <span class="dots-separator"></span>
+                                    <span class="product-page__data-column-value">540</span>
+                                </div>
+                            </div>
+                            <div class="product-page__data-column">
+                                <div class="product-page__data-column-title">Материалы</div>
+                                <div class="product-page__data-column-row">
+                                    <span class="product-page__data-column-char">Корпус</span>
+                                    <span class="dots-separator"></span>
+                                    <span class="product-page__data-column-value">
+                                    Ламинированное ДСП, Алюминий, Зеркало
+                                </span>
+                                </div>
+                                <div class="product-page__data-column-row">
+                                    <span class="product-page__data-column-char">Кромка</span>
+                                    <span class="dots-separator"></span>
+                                    <span class="product-page__data-column-value">ПВХ 0,5 мм</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-page__data-column-wrapper">
+                            <div class="product-page__data-column">
+                                <div class="product-page__data-column-title">Дополнительно</div>
+                                <div class="product-page__data-list-wrap">
+                                    <ul class="product-page__data-list">
+                                        <li class="product-page__data-list-item">Доводчики на фасадах</li>
+                                        <li class="product-page__data-list-item">Телескопические направляющие</li>
+                                        <li class="product-page__data-list-item">Анодированная фурнитура</li>
+                                        <li class="product-page__data-list-item">Внутренняя светодиодная подсветка</li>
+                                    </ul>
+                                    <ul class="product-page__data-list">
+                                        <li class="product-page__data-list-item">Выдвижные вешалки</li>
+                                        <li class="product-page__data-list-item">Корзина для обуви, мм: 500 х 350 х 200</li>
+                                        <li class="product-page__data-list-item">Гарантия 12 месяцев</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-page__column">
+
+                    <div class="product-page__delivery">
+                        <div class="product-page__delivery-price-row">
+                            <span class="product-page__delivery-price-char">Доставка по Одессе </span>
+                            <span class="dots-separator"></span>
+                            <span class="product-page__delivery-price-value">120 грн</span>
+                        </div>
+                        <div class="product-page__delivery-price-row">
+                            <span class="product-page__delivery-price-char">Самовывоз из магазина </span>
+                            <span class="dots-separator"></span>
+                            <span class="product-page__delivery-price-value">Бесплатно</span>
+                        </div>
+                        <div class="product-page__delivery-price-row">
+                            <span class="product-page__delivery-price-char">Предоплата</span>
+                            <span class="dots-separator"></span>
+                            <span class="product-page__delivery-price-value">3%</span>
+                        </div>
+                        <p class="product-page__delivery-text">
+                            При заказе на сумму 3500 грн и выше,
+                            действует бесплатная доставки,
+                            бесплатный выезд дизайнера,
+                            а также бесплатная сборка и установка.
+                        </p>
+                        <p class="product-page__delivery-text">
+                            Отправка осуществляется после предоплаты 3%
+                        </p>
+                        <a href="#" class="link _color-orange _font-sm">
+                            <span class="link__text">Детальная информация</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-page__description">
+            <div class="product-page__installation">
+                <h3 class="product-page__description-title">Сборка и установка</h3>
+                <p>
+                    При использовании шкафа купе нет необходимости в дополнительном пространстве
+                    перед шкафом для открытия,  как в шкафу с распашными дверями, но двери шкафа-купе
+                    уменьшают на 70—120 мм его полезную глубину, также система шкафа-купе налагает дополнительные
+                    ограничения на расположение выдвижных и откидных элементов.
+                </p>
+            </div>
+        </div>
+        <div class="product-page__responses">
+            <h2 class="product-page__title">Отзывы</h2>
+            <div class="product-page__responses-content js-responses">
+                <div class="product-page__responses-item js-responses-item">
+                    <div class="product-page__responses-item-text js-responses-item-text">
+                        Мастера приветливые, все подняли на четвертый этаж,
+                        собрали шкаф но из-за нового щитка он не поместился в нишу.
+                        Пришлось подрезать стенку, сделали акуратно.
+                        Отдельное спасибо дизайнеру что отговорил сделать
+                    </div>
+                    <a href="#" class="link _color-orange _font-sm _hidden js-responses-toggle">
+                        <span class="link__text js-responses-toggle-text">Читать полностью</span>
+                        <span class="link__text _hidden js-responses-toggle-text">Скрыть</span>
+                    </a>
+                    <span class="product-page__responses-author">Светлана</span>
+                </div>
+                <div class="product-page__responses-item js-responses-item ">
+                    <div class="product-page__responses-item-text js-responses-item-text">
+                        Шустрые сборщики, никаких вопросов, много мусора, но за собой убрали )
+                    </div>
+                    <a href="#" class="link _color-orange _font-sm _hidden js-responses-toggle">
+                        <span class="link__text js-responses-toggle-text">Читать полностью</span>
+                        <span class="link__text _hidden js-responses-toggle-text">Скрыть</span>
+                    </a>
+                    <span class="product-page__responses-author">Анна</span>
+                </div>
+                <div class="product-page__responses-item js-responses-item">
+                    <div class="product-page__responses-item-text js-responses-item-text">
+                        Заказывала шкаф купе, предыдущий покупала
+                        в сетевом магазине но он не продержался и трех лет.
+                        Новый шкаф выглядит отлично и создает впечатление
+                        качественого и крепкого. Надеюсь прослужит не один год.
+                        Спасибо за работу.
+                    </div>
+                    <a href="#" class="link _color-orange _font-sm _hidden js-responses-toggle">
+                        <span class="link__text js-responses-toggle-text">Читать полностью</span>
+                        <span class="link__text _hidden js-responses-toggle-text">Скрыть</span>
+                    </a>
+                    <span class="product-page__responses-author">Татьяна</span>
+                </div>
+                <div class="product-page__responses-item js-responses-item">
+                    <div class="product-page__responses-item-text js-responses-item-text">
+                        Мастера приветливые, все подняли на четвертый этаж,
+                        собрали шкаф но из-за нового щитка он не поместился в нишу.
+                        Пришлось подрезать стенку, сделали акуратно.
+                        Отдельное спасибо дизайнеру что отговорил сделать
+                    </div>
+                    <a href="#" class="link _color-orange _font-sm _hidden js-responses-toggle">
+                        <span class="link__text js-responses-toggle-text">Читать полностью</span>
+                        <span class="link__text _hidden js-responses-toggle-text">Скрыть</span>
+                    </a>
+                    <span class="product-page__responses-author">Светлана 2</span>
+                </div>
+                <div class="product-page__responses-item js-responses-item ">
+                    <div class="product-page__responses-item-text js-responses-item-text">
+                        Шустрые сборщики, никаких вопросов, много мусора, но за собой убрали )
+                    </div>
+                    <a href="#" class="link _color-orange _font-sm _hidden js-responses-toggle">
+                        <span class="link__text js-responses-toggle-text">Читать полностью</span>
+                        <span class="link__text _hidden js-responses-toggle-text">Скрыть</span>
+                    </a>
+                    <span class="product-page__responses-author">Анна 2</span>
+                </div>
+                <div class="product-page__responses-item js-responses-item">
+                    <div class="product-page__responses-item-text js-responses-item-text">
+                        Заказывала шкаф купе, предыдущий покупала
+                        в сетевом магазине но он не продержался и трех лет.
+                        Новый шкаф выглядит отлично и создает впечатление
+                        качественого и крепкого. Надеюсь прослужит не один год.
+                        Спасибо за работу.
+                    </div>
+                    <a href="#" class="link _color-orange _font-sm _hidden js-responses-toggle">
+                        <span class="link__text js-responses-toggle-text">Читать полностью</span>
+                        <span class="link__text _hidden js-responses-toggle-text">Скрыть</span>
+                    </a>
+                    <span class="product-page__responses-author">Татьяна 2</span>
+                </div>
+                <div class="product-page__responses-item js-responses-item">
+                    <div class="product-page__responses-item-text js-responses-item-text">
+                        Мастера приветливые, все подняли на четвертый этаж,
+                        собрали шкаф но из-за нового щитка он не поместился в нишу.
+                        Пришлось подрезать стенку, сделали акуратно.
+                        Отдельное спасибо дизайнеру что отговорил сделать
+                    </div>
+                    <a href="#" class="link _color-orange _font-sm _hidden js-responses-toggle">
+                        <span class="link__text js-responses-toggle-text">Читать полностью</span>
+                        <span class="link__text _hidden js-responses-toggle-text">Скрыть</span>
+                    </a>
+                    <span class="product-page__responses-author">Светлана 3</span>
+                </div>
+            </div>
+            <div class="product-page__responses-controls">
+                <a href="#mfp-response" class="button _inverted js-popup-toggle">Написать Отзыв</a>
+                <div class="product-page__responses-nav _hidden js-responses-nav">
+                    <a href="#" class="product-page__responses-nav-item _disabled _prev js-responses-nav-item" data-action="prev">
+                        <svg class="product-page__responses-nav-icon" width="7px" height="12px">
+                            <path d="M7.000,9.485 L2.919,5.999 L7.000,2.513 L7.000,0.006 L-0.014,5.999 L7.000,11.991 L7.000,9.485 Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="product-page__responses-nav-item _next js-responses-nav-item" data-action="next">
+                        <svg class="product-page__responses-nav-icon" width="7px" height="12px">
+                            <path d="M7.000,9.485 L2.919,5.999 L7.000,2.513 L7.000,0.006 L-0.014,5.999 L7.000,11.991 L7.000,9.485 Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-us">
+    <div class="contact-us__container container">
+        <div class="contact-us__socials">
+            <div class="contact-us__title">
+                <h2 class="title _color-white">Есть вопрос?</h2>
+            </div>
+            <div class="contact-us__socials-text">
+                Хотите перезвоним Вам за 30 секунд ? :)<br>
+                Оставьте свой телефон:
+            </div>
+            <div class="contact-us__socials-recall">
+                <input type="text" class="input js-phone-number-input">
+                <button class="button">Перезвоните мне</button>
+            </div>
+            <div class="contact-us__socials-text">
+                Или пишите нам прямо сейчас,<br>
+                с радостью ответим на все Ваши вопросы
+            </div>
+            <div class="contact-us__socials-block">
+                <a href="#" class="contact-us__socials-item">
+                    <i class="contact-us__socials-icon _viber"></i>
+                    Viber
+                </a>
+                <a href="#" class="contact-us__socials-item">
+                    <i class="contact-us__socials-icon _telegram"></i>
+                    Telegram
+                </a>
+                <a href="#" class="contact-us__socials-item">
+                    <i class="contact-us__socials-icon _messenger"></i>
+                    Facebook Messenger
+                </a>
+                <a href="#" class="contact-us__socials-item">
+                    <i class="contact-us__socials-icon _whatsup"></i>
+                    WhatsApp
+                </a>
+                <a href="#" class="contact-us__socials-item">
+                    <i class="contact-us__socials-icon _chat"></i>
+                    Онлайн Чат
+                </a>
+            </div>
+        </div>
+        <div class="contact-us__address">
+            <div class="contact-us__title">
+                <h2 class="title _color-white">Приходите к нам в Шоурум</h2>
+            </div>
+            <div class="contact-us__address-controls">
+                <a href="#" class="link _color-orange _active">
+                    <span class="link__text">Одесса №1</span>
+                </a>
+            </div>
+            <div class="contact-us__address-preview">
+                <div class="contact-us__map-wrap">
+                    <div class="contact-us__map-overlay">Нажмите для просмотра</div>
+                    <div class="contact-us__map"></div>
+                </div>
+                <div class="contact-us__address-photo">
+                    <img src="images/showroom-big.jpg">
+                </div>
+            </div>
+            <div class="contact-us__address-data">
+                <div class="contact-us__address-column">
+                    Одесса, ул. Семена Палия, 125, магазин 290
+                    <div class="contact-us__address-schedule">Вт - Вс, с 9:00 до 14:00</div>
+                </div>
+                <div class="contact-us__address-column">
+                    +38 (050) 555 - 45 - 55
+                    <div class="contact-us__address-schedule">с 10:00 до 20:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="recommended">
+    <div class="recommended__container container">
+        <div class="recommended__title">
+            <h2 class="title">Похожие товары</h2>
+        </div>
+        <div class="recommended__items">
+            <a class="product" href="/product.html">
+                <div class="product__content">
+                    <div class="product__image-wrap">
+                        <img class="product__image" src="images/product-2.jpg" alt="product-2">
+                        <img class="product__image-alt" src="images/product-1.jpg" alt="product-1">
+                    </div>
+                    <h3 class="product__title">
+                        Шкаф Купе Checkstar
+                        с рисунком пескоструй ...
+                    </h3>
+                    <div class="product__colors">
+                        <div class="product__colors-category">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-1.jpg" alt="col-1">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-2.jpg" alt="col-2">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-3.jpg" alt="col-3">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-4.jpg" alt="col-4">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-5.jpg" alt="col-5">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-6.jpg" alt="col-6">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-7.jpg" alt="col-7">
+                            </span>
+                            <span class="product__color-more"></span>
+                        </div>
+                        <div class="product__colors-category _sm">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-8.jpg" alt="col-8">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-9.jpg" alt="col-9">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-10.jpg" alt="col-10">
+                            </span>
+                        </div>
+                        <div class="product__colors-category">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-11.jpg" alt="col-11">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-12.jpg" alt="col-12">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-13.jpg" alt="col-13">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-14.jpg" alt="col-14">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-15.jpg" alt="col-15">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-16.jpg" alt="col-16">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-17.jpg" alt="col-17">
+                            </span>
+                            <span class="product__color-more"></span>
+                        </div>
+                    </div>
+                    <div class="price__wrap">
+                        <div class="price">
+                            <span class="price__value">4050</span>
+                            <span class="price__period">грн</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/product.html" class="product">
+                <div class="product__content">
+                    <div class="product__image-wrap">
+                        <img class="product__image" src="images/product-1.jpg" alt="product-1">
+                        <img class="product__image-alt" src="images/product-3.jpg" alt="product-3">
+                    </div>
+                    <h3 class="product__title">
+                        Купе Шкаф Класик 004, матовые двери
+                    </h3>
+                    <div class="product__colors">
+                        <div class="product__colors-category">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-1.jpg" alt="col-1">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-2.jpg" alt="col-2">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-3.jpg" alt="col-3">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-4.jpg" alt="col-4">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-5.jpg" alt="col-5">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-6.jpg" alt="col-6">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-7.jpg" alt="col-7">
+                            </span>
+                            <span class="product__color-more"></span>
+                        </div>
+                        <div class="product__colors-category _sm">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-8.jpg" alt="col-8">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-9.jpg" alt="col-9">
+                            </span>
+                        </div>
+                        <div class="product__colors-category">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-11.jpg" alt="col-11">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="price__wrap">
+                        <div class="price _discount">
+                            <span class="price__old-value">4500</span>
+                            <span class="price__value">4050</span>
+                            <span class="price__period">грн</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/product.html" class="product">
+                <div class="product__content">
+                    <div class="product__image-wrap">
+                        <img class="product__image" src="images/product-2.jpg" alt="product-2">
+                        <img class="product__image-alt" src="images/product-3.jpg" alt="product-3">
+                    </div>
+                    <h3 class="product__title">
+                        Шкаф Класик 001 с зеркальными дверями
+                    </h3>
+                    <div class="product__colors">
+                        <div class="product__colors-category">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-1.jpg" alt="col-1">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-2.jpg" alt="col-2">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-3.jpg" alt="col-3">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-4.jpg" alt="col-4">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-5.jpg" alt="col-5">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-6.jpg" alt="col-6">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-7.jpg" alt="col-7">
+                            </span>
+                            <span class="product__color-more"></span>
+                        </div>
+                        <div class="product__colors-category _sm">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-8.jpg" alt="col-8">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-9.jpg" alt="col-9">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-10.jpg" alt="col-10">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="price__wrap">
+                        <div class="price _sold-out">
+                            <span class="price__old-value">4500</span>
+                            <span class="price__value">4050</span>
+                            <span class="price__period">грн</span>
+                        </div>
+                        <span class="price__label">Продано</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/product.html" class="product">
+                <div class="product__content">
+                    <div class="product__image-wrap">
+                        <img class="product__image" src="images/product-2.jpg" alt="product-2">
+                        <img class="product__image-alt" src="images/product-1.jpg" alt="product-1">
+                    </div>
+                    <h3 class="product__title">
+                        Шкаф Купе Checkstar
+                        с рисунком пескоструй ...
+                    </h3>
+                    <div class="product__colors">
+                        <div class="product__colors-category">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-1.jpg" alt="col-1">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-2.jpg" alt="col-2">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-3.jpg" alt="col-3">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-4.jpg" alt="col-4">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-5.jpg" alt="col-5">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-6.jpg" alt="col-6">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-7.jpg" alt="col-7">
+                            </span>
+                            <span class="product__color-more"></span>
+                        </div>
+                        <div class="product__colors-category _sm">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-8.jpg" alt="col-8">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-9.jpg" alt="col-9">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-10.jpg" alt="col-10">
+                            </span>
+                        </div>
+                        <div class="product__colors-category">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-11.jpg" alt="col-11">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-12.jpg" alt="col-12">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-13.jpg" alt="col-13">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-14.jpg" alt="col-14">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-15.jpg" alt="col-15">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-16.jpg" alt="col-16">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-17.jpg" alt="col-17">
+                            </span>
+                            <span class="product__color-more"></span>
+                        </div>
+                    </div>
+                    <div class="price__wrap">
+                        <div class="price">
+                            <span class="price__value">4050</span>
+                            <span class="price__period">грн</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/product.html" class="product">
+                <div class="product__content">
+                    <div class="product__image-wrap">
+                        <img class="product__image" src="images/product-1.jpg" alt="product-1">
+                        <img class="product__image-alt" src="images/product-3.jpg" alt="product-3">
+                    </div>
+                    <h3 class="product__title">
+                        Купе Шкаф Класик 004, матовые двери
+                    </h3>
+                    <div class="product__colors">
+                        <div class="product__colors-category">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-1.jpg" alt="col-1">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-2.jpg" alt="col-2">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-3.jpg" alt="col-3">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-4.jpg" alt="col-4">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-5.jpg" alt="col-5">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-6.jpg" alt="col-6">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-7.jpg" alt="col-7">
+                            </span>
+                            <span class="product__color-more"></span>
+                        </div>
+                        <div class="product__colors-category _sm">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-8.jpg" alt="col-8">
+                            </span>
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-9.jpg" alt="col-9">
+                            </span>
+                        </div>
+                        <div class="product__colors-category">
+                            <span class="product__color js-color-link">
+                                <img src="images/colors/col-11.jpg" alt="col-11">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="price__wrap">
+                        <div class="price _discount">
+                            <span class="price__old-value">4500</span>
+                            <span class="price__value">4050</span>
+                            <span class="price__period">грн</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="cart mfp-hide js-cart" id="mfp-cart">
+    <div class="cart__content">
+        <div class="cart__item">
+            <div class="cart__item-title">
+                <div class="tooltip__wrap js-delete-item-tooltip">
+                    <div class="cart__item-delete js-delete-item">
+                        <svg class="cart__item-delete-icon" width="19px" height="21px">
+                            <path d="M-0.000,4.999 L-0.000,4.000 L5.191,4.000 C5.728,1.696 7.443,-0.000 9.500,-0.000 C11.557,-0.000 13.272,1.696 13.809,4.000 L19.000,4.000 L19.000,4.999 L-0.000,4.999 ZM9.500,0.999 C7.738,0.999 6.295,2.306 6.050,4.000 L12.950,4.000 C12.705,2.306 11.262,0.999 9.500,0.999 ZM17.000,17.999 C17.000,19.656 15.657,20.999 14.000,20.999 L5.000,20.999 C3.343,20.999 2.000,19.656 2.000,17.999 L2.000,5.999 L17.000,5.999 L17.000,17.999 ZM16.000,6.000 L3.000,6.000 L3.000,18.000 C3.000,19.104 3.895,20.000 5.000,20.000 L14.000,20.000 C15.105,20.000 16.000,19.104 16.000,18.000 L16.000,6.000 ZM12.000,8.000 L13.000,8.000 L13.000,16.999 L12.000,16.999 L12.000,8.000 ZM9.000,8.000 L10.000,8.000 L10.000,16.999 L9.000,16.999 L9.000,8.000 ZM6.000,8.000 L7.000,8.000 L7.000,16.999 L6.000,16.999 L6.000,8.000 Z"/>
+                        </svg>
+                    </div>
+                    <div class="tooltip">
+                        <div class="tooltip__content">
+                            Вы точно хотите удалить товар из корзины?
+                        </div>
+                        <div class="tooltip__actions">
+                            <button class="button _inverted js-delete-item-action">Отмена</button>
+                            <button class="button js-delete-item-action">удалить</button>
+                        </div>
+                    </div>
+                </div>
+                <span class="cart__item-title-text">
+                    Шкаф Купе Checkstar с рисунком пескоструй на зеркале
+                </span>
+            </div>
+            <div class="cart__item-card">
+                <div class="cart__item-img-wrap">
+                    <img class="cart__item-img" src="images/product-big-1.jpg" alt="product">
+                </div>
+                <div class="cart__item-info">
+                    <div class="cart__item-info-sizes">
+                        <div class="cart__item-info-label">Размер, мм:</div>
+                        <div class="cart__item-info-row">
+                            <span class="cart__item-info-char">Высота</span>
+                            <span class="dots-separator"></span>
+                            <span class="cart__item-info-value">2400</span>
+                        </div>
+                        <div class="cart__item-info-row">
+                            <span class="cart__item-info-char">Ширина</span>
+                            <span class="dots-separator"></span>
+                            <span class="cart__item-info-value">1500</span>
+                        </div>
+                        <div class="cart__item-info-row">
+                            <span class="cart__item-info-char">Глубина</span>
+                            <span class="dots-separator"></span>
+                            <span class="cart__item-info-value">600</span>
+                        </div>
+                    </div>
+                    <div class="cart__item-info-data">
+                        <div class="cart__item-info-row">
+                            <span class="cart__item-info-char">Цвет корпуса</span>
+                            <span class="dots-separator"></span>
+                            <span class="cart__item-info-value">
+                                Ольха
+                                <img class="cart__item-info-thumb" src="images/colors/col-1.jpg" alt="colour">
+                            </span>
+                        </div>
+                        <div class="cart__item-info-row">
+                            <span class="cart__item-info-char">Раздвижная система</span>
+                            <span class="dots-separator"></span>
+                            <span class="cart__item-info-value">Браун</span>
+                        </div>
+                        <div class="cart__item-info-row">
+                            <span class="cart__item-info-char">Цвет профиля</span>
+                            <span class="dots-separator"></span>
+                            <span class="cart__item-info-value">
+                                Серебро
+                                <img class="cart__item-info-thumb" src="images/colors/col-8.jpg" alt="colour">
+                            </span>
+                        </div>
+                        <div class="cart__item-info-row">
+                            <span class="cart__item-info-char">Рисунок на зеркале</span>
+                            <span class="dots-separator"></span>
+                            <span class="cart__item-info-value">Ваш вариант</span>
+                        </div>
+                    </div>
+                    <div class="cart__item-price">
+                        <div class="cart__item-price-block">
+                            <div class="cart__item-price-label">Цена:</div>
+                            <div class="cart__item-price-value">5 899 грн</div>
+                        </div>
+                        <div class="cart__item-price-block">
+                            <div class="cart__item-price-label">Кол-во:</div>
+                            <div class="cart__item-qty">
+                                <button class="cart__item-qty-control _minus _disabled"></button>
+                                <span class="cart__item-qty-value">1</span>
+                                <button class="cart__item-qty-control _plus"></button>
+                            </div>
+                        </div>
+                        <div class="cart__item-price-block">
+                            <div class="cart__item-price-label">Сумма:</div>
+                            <div class="cart__item-price-value">11 798 грн</div>
+                        </div>
+                    </div>
+                    <div class="cart__item-delivery">
+                        <label class="checkbox _orange _inline">
+                            <input type="checkbox" class="checkbox__input">
+                            <i class="checkbox__icon"></i>
+                            <span class="checkbox__text">Сборка изделия</span>
+                        </label>
+                        <span class="dots-separator"></span>
+                        <span class="cart__item-delivery-price">80 грн</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart__info">
+        <i class="cart__close js-cart-close">
+            <svg class="cart__close-icon">
+                <path d="M16.017,13.966 L13.966,16.016 L8.499,10.548 L3.031,16.016 L0.980,13.966 L6.448,8.498 L0.980,3.030 L3.031,0.979 L8.499,6.447 L13.966,0.979 L16.017,3.030 L10.549,8.498 L16.017,13.966 Z"/>
+            </svg>
+        </i>
+        <div class="cart__info-content">
+            <div class="cart__info-title">Оформление заказа</div>
+            <div class="cart__info-phone">
+                <label class="cart__info-phone-label">Ваш телефон</label>
+                <div class="hint__wrap">
+                    <input class="input js-phone-number-input" type="text">
+                </div>
+            </div>
+            <div class="cart__info-delivery">
+                <span class="cart__info-delivery-label">Доставка в:</span>
+                <div class="select-city__wrap js-select-city-wrap">
+                    <a href="#" class="link _color-orange _font-sm js-select-city-open">
+                        <span class="link__text js-select-city-value">Одесса</span>
+                    </a>
+                    <div class="select-city _pos-right js-select-city">
+                        <span class="select-city__close js-select-city-close">
+                            <svg class="select-city__close-icon" width="17px" height="17px">
+                                <path d="M16.017,13.966 L13.966,16.016 L8.499,10.548 L3.031,16.016 L0.980,13.966 L6.448,8.498 L0.980,3.030 L3.031,0.979 L8.499,6.447 L13.966,0.979 L16.017,3.030 L10.549,8.498 L16.017,13.966 Z"/>
+                            </svg>
+                        </span>
+                        <div class="select-city__title">Выберите город</div>
+                        <div class="select-city__desc">Мы доставляем заказы по всей Украине!</div>
+                        <div class="select-city__items">
+                            <div class="select-city__column">
+                                <a href="#" class="select-city__item js-select-city-item" data-value="Киев">Киев</a>
+                                <a href="#" class="select-city__item js-select-city-item _sm" data-value="Бровары">Бровары</a>
+                                <a href="#" class="select-city__item js-select-city-item _sm" data-value="Борисполь">Борисполь</a>
+                                <a href="#" class="select-city__item js-select-city-item _sm" data-value="Ирпень">Ирпень</a>
+                            </div>
+                            <div class="select-city__column">
+                                <a href="#" class="select-city__item js-select-city-item  _active" data-value="Одесса">Одесса</a>
+                                <a href="#" class="select-city__item js-select-city-item _sm" data-value="Черноморск">Черноморск</a>
+                                <a href="#" class="select-city__item js-select-city-item _sm" data-value="Николаев">Николаев</a>
+                                <a href="#" class="select-city__item js-select-city-item _sm" data-value="Южный">Южный</a>
+                                <a href="#" class="select-city__item js-select-city-item _sm" data-value="Фонтанка">Фонтанка</a>
+                            </div>
+                            <div class="select-city__column">
+                                <a href="#" class="select-city__item js-select-city-item" data-value="Харьков">Харьков</a>
+                                <a href="#" class="select-city__item js-select-city-item" data-value="Днепр">Днепр</a>
+                                <a href="#" class="select-city__item js-select-city-item" data-value="Запорожье">Запорожье</a>
+                                <a href="#" class="select-city__item js-select-city-item" data-value="Львов">Львов</a>
+                            </div>
+                        </div>
+                        <div class="select-city__manual-input">
+                            <div class="select-city__manual-input-text">Или введите другой населенный пункт</div>
+                            <div class="select-city__manual-input-wrap">
+                                <input type="text" class="input js-select-city-input" placeholder="Введите ваш город">
+                                <button class="select-city__manual-input-send _disabled js-select-city-button"></button>
+                            </div>
+                            <div class="select-city__manual-input-example">
+                                Например:
+                                <a href="#" class="link _font-sm _color-orange js-select-city-item" data-value="Беляевка">
+                                    <span class="link__text">Беляевка</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__info-delivery-methods">
+                <div class="cart__info-delivery-wrap">
+                    <div class="cart__info-row">
+                        <label class="radio">
+                            <input type="radio" name="delivery-method" class="radio__input">
+                            <i class="radio__icon"></i>
+                            <span class="radio__text">На дом</span>
+                        </label>
+                        <span class="dots-separator _brown"></span>
+                        <span class="cart__info-price">120 грн</span>
+                    </div>
+                </div>
+
+                <div class="cart__info-delivery-wrap">
+                    <div class="cart__info-row">
+                        <label class="radio">
+                            <input type="radio" name="delivery-method" class="radio__input">
+                            <i class="radio__icon"></i>
+                            <span class="radio__text">Новой Почтой</span>
+                        </label>
+                        <span class="dots-separator _brown"></span>
+                        <span class="cart__info-price">190 грн</span>
+                    </div>
+                </div>
+
+                <div class="cart__info-delivery-wrap">
+                    <div class="cart__info-row">
+                        <label class="radio">
+                            <input type="radio" name="delivery-method" class="radio__input">
+                            <i class="radio__icon"></i>
+                            <span class="radio__text">Самовывоз</span>
+                        </label>
+                        <span class="dots-separator _brown"></span>
+                        <span class="cart__info-price">Бесплатно</span>
+                    </div>
+                    <div class="cart__info-delivery-note">
+                        Самовывоз из нашего магазина: Одесса, ул. Семена Палия,
+                        125, магазин 290, Вт - Вс, с 9:00 до 14:00
+                    </div>
+                </div>
+            </div>
+            <div class="cart__payment">
+                <div class="cart__info-row">
+                    <span class="cart__info-char">1 товар на сумму</span>
+                    <span class="dots-separator _brown"></span>
+                    <span class="cart__info-price">5 899 грн</span>
+                </div>
+                <div class="cart__info-row">
+                    <span class="cart__info-char">Доставка</span>
+                    <span class="dots-separator _brown"></span>
+                    <span class="cart__info-price">120 грн</span>
+                </div>
+                <div class="cart__info-row">
+                    <span class="cart__info-char">Сборка</span>
+                    <span class="dots-separator _brown"></span>
+                    <span class="cart__info-price">80 грн</span>
+                </div>
+                <div class="cart__info-row _total">
+                    <span class="cart__info-char">К оплате</span>
+                    <span class="dots-separator _brown"></span>
+                    <span class="cart__info-price">
+                        6 099
+                        <span class="cart__info-price-currency">грн</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="cart__info-actions">
+            <a href="/thank-you.html" class="button">Оформить заказ</a>
+            <button class="button _inverted cart__continue js-cart-close">Продолжить покупки</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="cart__collapsed js-cart-collapsed">
+    <div class="cart__collapsed-row">
+        <span class="cart__collapsed-icon">
+            <div class="cart__collapsed-icon-count">3</div>
+        </span>
+        <span class="cart__collapsed-price">
+            12 696
+            <span class="cart__collapsed-price-currency">грн</span>
+        </span>
+    </div>
+</div>
+<div class="popup _size-md _bg-black mfp-hide js-popup" id="mfp-callback">
+    <i class="mfp-close popup__close">
+        <svg class="popup__close-icon" width="17px" height="17px">
+            <path d="M16.017,13.966 L13.966,16.016 L8.499,10.548 L3.031,16.016 L0.980,13.966 L6.448,8.498 L0.980,3.030 L3.031,0.979 L8.499,6.447 L13.966,0.979 L16.017,3.030 L10.549,8.498 L16.017,13.966 Z"/>
+        </svg>
+    </i>
+    <div class="popup__container">
+        <div class="popup__form _callback">
+            <div class="thank-you__form-text">Хотите перезвоним Вам за 30 секунд ? :)</div>
+            <div class="thank-you__form-content">
+                <div class="thank-you__form-item">
+                    <label class="thank-you__form-label">Оставьте свой телефон:</label>
+                    <input type="text" class="input js-phone-number-input">
+                </div>
+                <button class="button">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mfp-hide popup js-popup" id="mfp-how-to-order">
+    <i class="mfp-close popup__close">
+        <svg class="popup__close-icon" width="17px" height="17px">
+            <path d="M16.017,13.966 L13.966,16.016 L8.499,10.548 L3.031,16.016 L0.980,13.966 L6.448,8.498 L0.980,3.030 L3.031,0.979 L8.499,6.447 L13.966,0.979 L16.017,3.030 L10.549,8.498 L16.017,13.966 Z"/>
+        </svg>
+    </i>
+    <div class="popup__container">
+        <div class="popup__title">Как происходит заказ?</div>
+        <div class="popup__body">
+            <p class="popup__text">
+                Выберите нужные вам параметры и опции товара, затем нажмите
+                кнопку “Заказать”. Откроется корзина с выбраным товаром,
+                вы можете продолжить покупки либо сразу перейти к оформлению.
+                Укажите телефон, город и способ доставки, и нажмите кнопку “Оформить заказ”.
+            </p>
+            <p class="popup__text">
+                Наш менеджер перезвонит Вам в ближайшее рабочее время для подтверждения заказа и уточнения всех деталей.
+            </p>
+        </div>
+        <div class="popup__actions">
+            <button class="button js-close-popup">Закрыть</button>
+        </div>
+    </div>
+</div>
+
+<div class="mfp-hide popup js-popup" id="mfp-big-samples">
+    <i class="mfp-close popup__close">
+        <svg class="popup__close-icon" width="17px" height="17px">
+            <path d="M16.017,13.966 L13.966,16.016 L8.499,10.548 L3.031,16.016 L0.980,13.966 L6.448,8.498 L0.980,3.030 L3.031,0.979 L8.499,6.447 L13.966,0.979 L16.017,3.030 L10.549,8.498 L16.017,13.966 Z"/>
+        </svg>
+    </i>
+    <div class="popup__container">
+        <div class="popup__title">Материал корпуса</div>
+        <div class="popup__body">
+            <p class="popup__text">
+                Помните что цвет на мониторе и фотографиях может
+                отличаться от цвета который ви видите в живую.
+                В незначительной степени допустимо отклонение оттенка
+                в разных партиях. Если вы сомневаетесь с оттенком,
+                неволнуйтесь, наш дизайнер приедет к вам и покажет образцы в живую
+            </p>
+            <div class="popup__samples">
+                <div class="popup__samples-item">
+                    <img class="popup__samples-item-img" src="images/colors/col-1_big.jpg" alt="color">
+                    <span class="popup__samples-item-title">Рисунок на зеркале 001</span>
+                </div>
+                <div class="popup__samples-item">
+                    <img class="popup__samples-item-img" src="images/colors/col-2_big.jpg" alt="color">
+                    <span class="popup__samples-item-title">Рисунок на зеркале 002</span>
+                </div>
+                <div class="popup__samples-item">
+                    <img class="popup__samples-item-img" src="images/colors/col-3_big.jpg" alt="color">
+                    <span class="popup__samples-item-title">Рисунок на зеркале 003</span>
+                </div>
+                <div class="popup__samples-item">
+                    <img class="popup__samples-item-img" src="images/colors/col-4_big.jpg" alt="color">
+                    <span class="popup__samples-item-title">Рисунок на зеркале 004</span>
+                </div>
+                <div class="popup__samples-item">
+                    <img class="popup__samples-item-img" src="images/colors/col-5_big.jpg" alt="color">
+                    <span class="popup__samples-item-title">Рисунок на зеркале 005</span>
+                </div>
+                <div class="popup__samples-item">
+                    <img class="popup__samples-item-img" src="images/colors/col-6_big.jpg" alt="color">
+                    <span class="popup__samples-item-title">Рисунок на зеркале 006</span>
+                </div>
+            </div>
+        </div>
+        <div class="popup__actions">
+            <button class="button js-close-popup">Закрыть</button>
+        </div>
+    </div>
+</div>
+
+<div class="mfp-hide popup js-popup" id="mfp-images-list">
+    <i class="mfp-close popup__close">
+        <svg class="popup__close-icon" width="17px" height="17px">
+            <path d="M16.017,13.966 L13.966,16.016 L8.499,10.548 L3.031,16.016 L0.980,13.966 L6.448,8.498 L0.980,3.030 L3.031,0.979 L8.499,6.447 L13.966,0.979 L16.017,3.030 L10.549,8.498 L16.017,13.966 Z"/>
+        </svg>
+    </i>
+    <div class="popup__container">
+        <div class="popup__title">Рисунок на зеркале</div>
+        <div class="popup__body">
+            <p class="popup__text">
+                Кроме стандартного рисунка из каталога мы можем выполнить
+                любое чернобелое двецветное изображение без полутонов, например,
+                ваше свадебное фото, рисунок ваших обоев, или иллюстрацию по вашему эскизу.
+            </p>
+            <div class="popup__samples">
+                <a href="#" class="popup__samples-item _clickable js-constructor-image"
+                   data-thumb-src="images/colors/col-7_big.jpg"
+                   data-value="001"
+                   data-alt="colour-001">
+                    <img class="popup__samples-item-img" src="images/colors/col-7_big.jpg" alt="color">
+                    <span class="popup__samples-item-title">Рисунок на зеркале 001</span>
+                </a>
+                <a href="#" class="popup__samples-item _clickable js-constructor-image"
+                   data-thumb-src="images/colors/col-8_big.jpg"
+                   data-value="002"
+                   data-alt="colour-002">
+                    <img class="popup__samples-item-img" src="images/colors/col-8_big.jpg" alt="color">
+                    <span class="popup__samples-item-title">Рисунок на зеркале 002</span>
+                </a>
+                <a href="#" class="popup__samples-item _clickable js-constructor-image"
+                   data-thumb-src="images/colors/col-9_big.jpg"
+                   data-value="003"
+                   data-alt="colour-003">
+                    <img class="popup__samples-item-img" src="images/colors/col-9_big.jpg" alt="color">
+                    <span class="popup__samples-item-title">Рисунок на зеркале 003</span>
+                </a>
+                <a href="#" class="popup__samples-item _clickable js-constructor-image"
+                   data-thumb-src="images/colors/col-10_big.jpg"
+                   data-value="004"
+                   data-alt="colour-004">
+                    <img class="popup__samples-item-img" src="images/colors/col-10_big.jpg" alt="color">
+                    <span class="popup__samples-item-title">Рисунок на зеркале 004</span>
+                </a>
+                <a href="#" class="popup__samples-item _clickable js-constructor-image"
+                   data-thumb-src="images/colors/col-11_big.jpg"
+                   data-value="005"
+                   data-alt="colour-005">
+                    <img class="popup__samples-item-img" src="images/colors/col-11_big.jpg" alt="color">
+                    <span class="popup__samples-item-title">Рисунок на зеркале 005</span>
+                </a>
+                <a href="#" class="popup__samples-item _clickable js-constructor-image"
+                   data-thumb-src="images/colors/col-12_big.jpg"
+                   data-value="006"
+                   data-alt="colour-006">
+                    <img class="popup__samples-item-img" src="images/colors/col-12_big.jpg" alt="color">
+                    <span class="popup__samples-item-title">Рисунок на зеркале 006</span>
+                </a>
+            </div>
+        </div>
+        <div class="popup__actions">
+            <button class="button js-close-popup">Закрыть</button>
+        </div>
+    </div>
+</div>
+
+<div class="popup _size-md _bg-black mfp-hide js-popup" id="mfp-response">
+    <i class="mfp-close popup__close">
+        <svg class="popup__close-icon" width="17px" height="17px">
+            <path d="M16.017,13.966 L13.966,16.016 L8.499,10.548 L3.031,16.016 L0.980,13.966 L6.448,8.498 L0.980,3.030 L3.031,0.979 L8.499,6.447 L13.966,0.979 L16.017,3.030 L10.549,8.498 L16.017,13.966 Z"/>
+        </svg>
+    </i>
+    <div class="popup__container">
+        <div class="popup__title">Написать Отзыв</div>
+        <div class="popup__form">
+            <div class="popup__form-item">
+                <label class="popup__form-label">Ваше Имя</label>
+                <input class="input" type="text">
+            </div>
+            <div class="popup__form-item">
+                <label class="popup__form-label">Отзыв</label>
+                <textarea class="textarea"></textarea>
+            </div>
+            <label class="popup__form-image-upload">
+                <span class="link _color-orange _font-sm">
+                    <span class="link__text">Прикрепить фото</span>
+                </span>
+                <input type="file" class="_hidden">
+            </label>
+            <div class="popup__form-action">
+                <button class="button js-send-response">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup _size-md _bg-black mfp-hide js-popup" id="mfp-response-success">
+    <i class="mfp-close popup__close">
+        <svg class="popup__close-icon" width="17px" height="17px">
+            <path d="M16.017,13.966 L13.966,16.016 L8.499,10.548 L3.031,16.016 L0.980,13.966 L6.448,8.498 L0.980,3.030 L3.031,0.979 L8.499,6.447 L13.966,0.979 L16.017,3.030 L10.549,8.498 L16.017,13.966 Z"/>
+        </svg>
+    </i>
+    <div class="popup__container">
+        <div class="popup__success">
+            <div class="popup__success-title">Спасибо за отзыв!</div>
+            <div class="popup__success-text">Отзыв будет проверен модератором и вскоре будет доступен на сайте.</div>
+        </div>
+
+        <div class="popup__actions">
+            <button class="button js-close-popup">Закрыть</button>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__socials">
+            <a href="#" class="footer__socials-link">
+                <svg class="footer__socials-icon" width="30px" height="17px">
+                    <path d="M0.126,2.184 C0.126,2.184 4.388,12.377 9.503,15.383 C9.503,15.383 11.615,17.266 16.059,16.966 C16.059,16.966 17.509,17.219 17.547,15.746 C17.586,14.273 18.024,13.112 18.775,13.021 C19.526,12.929 21.063,14.873 21.439,15.305 C21.815,15.736 22.801,16.992 24.547,16.992 C26.293,16.992 28.360,16.992 28.360,16.992 C28.360,16.992 29.684,16.982 29.953,16.239 C30.223,15.497 29.243,14.312 28.648,13.669 C28.052,13.027 25.529,10.765 25.226,10.140 C24.923,9.513 25.353,8.669 26.297,7.492 C27.241,6.314 29.596,3.557 29.927,2.170 C30.259,0.785 29.058,0.999 28.073,1.002 C27.088,1.006 23.816,1.002 23.816,1.002 C23.816,1.002 23.132,0.876 22.797,1.782 C22.462,2.686 20.875,5.971 19.532,7.414 C18.190,8.857 17.513,8.446 17.495,6.297 C17.477,4.149 17.840,1.343 17.338,0.716 C16.836,0.090 15.568,-0.076 13.760,-0.010 C11.952,0.055 10.613,0.001 9.999,0.976 C9.999,0.976 9.768,1.221 10.104,1.261 C10.439,1.302 11.668,1.379 11.749,3.390 C11.830,5.402 12.030,8.220 10.913,8.348 C9.797,8.477 7.408,3.906 7.022,3.079 C6.636,2.250 6.280,1.630 6.160,1.483 C6.040,1.337 5.670,1.016 5.037,1.016 C4.403,1.016 0.753,1.016 0.753,1.016 C0.753,1.016 -0.370,1.031 0.126,2.184 Z"/>
+                </svg>
+            </a>
+            <a href="#" class="footer__socials-link">
+                <svg class="footer__socials-icon" width="14px" height="26px">
+                    <path d="M14.000,4.983 L14.000,-0.001 L10.376,-0.001 C6.770,-0.001 3.989,2.931 3.989,6.548 L3.989,8.978 L-0.000,8.978 L-0.000,13.991 L3.989,13.991 L3.989,25.999 L8.998,25.999 L8.998,13.991 L14.000,13.991 L14.000,8.978 L8.998,8.978 L8.998,6.302 C8.998,5.574 9.587,4.983 10.313,4.983 L14.000,4.983 Z"/>
+                </svg> 
+            </a>
+            <a href="#" class="footer__socials-link">
+                <svg class="footer__socials-icon" width="25px" height="25px">
+                    <path d="M18.000,24.999 L7.000,24.999 C3.134,24.999 -0.000,21.865 -0.000,17.999 L-0.000,6.999 C-0.000,3.133 3.134,-0.001 7.000,-0.001 L18.000,-0.001 C21.866,-0.001 25.000,3.133 25.000,6.999 L25.000,17.999 C25.000,21.865 21.866,24.999 18.000,24.999 ZM23.000,6.999 C23.000,4.238 20.761,1.999 18.000,1.999 L7.000,1.999 C4.239,1.999 2.000,4.238 2.000,6.999 L2.000,17.999 C2.000,20.761 4.239,22.999 7.000,22.999 L18.000,22.999 C20.761,22.999 23.000,20.761 23.000,17.999 L23.000,6.999 ZM19.500,6.999 C18.672,6.999 18.000,6.327 18.000,5.499 C18.000,4.671 18.672,3.999 19.500,3.999 C20.328,3.999 21.000,4.671 21.000,5.499 C21.000,6.327 20.328,6.999 19.500,6.999 ZM12.500,18.999 C8.910,18.999 6.000,16.089 6.000,12.499 C6.000,8.909 8.910,5.999 12.500,5.999 C16.090,5.999 19.000,8.909 19.000,12.499 C19.000,16.089 16.090,18.999 12.500,18.999 ZM12.500,7.999 C10.015,7.999 8.000,10.014 8.000,12.499 C8.000,14.984 10.015,16.999 12.500,16.999 C14.985,16.999 17.000,14.984 17.000,12.499 C17.000,10.014 14.985,7.999 12.500,7.999 Z"/>
+                </svg>
+            </a>
+            <a href="#" class="footer__socials-link">
+                <svg class="footer__socials-icon" width="29px" height="22px">
+                    <path d="M26.241,19.686 C24.403,21.155 20.150,20.871 14.495,20.985 C8.840,20.871 4.586,21.155 2.749,19.686 C0.750,18.335 1.136,15.076 0.980,10.920 C1.136,6.765 0.750,3.631 2.749,2.280 C4.586,0.811 8.840,1.095 14.495,0.980 C20.150,1.095 24.403,0.811 26.241,2.280 C28.240,3.631 27.854,6.765 28.010,10.920 C27.854,15.076 28.240,18.335 26.241,19.686 ZM11.000,5.999 L11.000,15.999 L19.000,10.999 L11.000,5.999 Z"/>
+                </svg>
+            </a>
+            <a href="#" class="footer__socials-link">
+                <svg class="footer__socials-icon" width="37px" height="24px">
+                    <path d="M37.000,12.905 L32.906,12.905 L32.906,17.062 L29.906,17.062 L29.906,12.905 L25.844,12.905 L25.844,9.906 L29.906,9.906 L29.906,5.718 L32.906,5.718 L32.906,9.906 L37.000,9.906 L37.000,12.905 ZM11.761,23.999 C5.265,23.999 -0.000,18.574 -0.000,11.965 C-0.000,5.356 5.265,-0.002 11.761,-0.002 C14.807,-0.002 17.583,1.178 19.672,3.111 L16.306,6.595 C15.090,5.543 13.515,4.907 11.794,4.907 C7.944,4.907 4.823,8.082 4.823,11.999 C4.823,15.916 7.944,19.092 11.794,19.092 C15.579,19.092 17.355,17.127 18.127,14.385 L11.761,14.385 L11.761,9.612 L22.795,9.612 C22.797,9.703 23.059,10.646 23.059,12.234 C23.059,18.843 18.828,23.999 11.761,23.999 Z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="footer__copyright">
+            © Интернет-магазин «Вкусная Мебель» 2017–2018
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="js/main.js"></script>
+</html>

@@ -1,0 +1,10 @@
+.textarea {
+    min-height: 100px;
+    height: 135px;
+    border: 1px solid $border-gray;
+    padding: 13px 13px;
+    @include calibri-light;
+    font-size: 18.5px;
+    line-height: 1;
+    resize: vertical;
+}
